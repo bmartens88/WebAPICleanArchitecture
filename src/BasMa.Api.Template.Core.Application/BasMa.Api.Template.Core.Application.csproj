@@ -3,6 +3,7 @@
   <ItemGroup>
     <PackageReference Include="Ardalis.Specification" Version="5.1.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.0.4" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
   </ItemGroup>
 
@@ -11,10 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Mapping\" />
     <Folder Include="DTO\" />
+    <Folder Include="Mapping\" />
     <Folder Include="Constants\" />
-    <Folder Include="Features\" />
     <Folder Include="Specification\" />
   </ItemGroup>
 

@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Reflection;
+using BasMa.Api.Template.Core.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -23,7 +24,8 @@ namespace BasMa.Api.Template.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddValidation();
+            services.AddApplicationServices();
             services.AddApiVersioning(opts =>
             {
                 opts.DefaultApiVersion = new ApiVersion(1, 0);
