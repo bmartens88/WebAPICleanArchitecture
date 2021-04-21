@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" Version="5.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BasMa.Api.Template.Core.Application\BasMa.Api.Template.Core.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Config\" />
+    <Folder Include="Data\Context\" />
+    <Folder Include="Data\Seed\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
